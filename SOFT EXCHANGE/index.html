@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soft Exchange cryptocurrency market dashboard.">
+    <title>Soft Exchange — Crypto Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a href="#" class="brand"><span class="brand-icon">S</span> Soft Exchange</a>
+        <nav>
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="trade.html">Trade</a>
+    <a href="index.html#markets">Markets</a>
+</nav>
+        <button class="profile-button">My Portfolio ↗</button>
+    </header>
+
+    <main class="container" id="dashboard">
+        <section class="welcome">
+            <div>
+                <p class="eyebrow">YOUR CRYPTO COMMAND CENTRE</p>
+                <h1>Market overview</h1>
+                <p class="muted">Track the crypto market from one place.</p>
+            </div>
+            <span class="market-status"><span class="status-dot"></span> Live market data</span>
+        </section>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <p>Total market cap</p>
+                
+<h2 id="total-market-cap">$2.48T</h2>
+
+                <span class="positive">+2.34%</span>
+            </article>
+            <article class="stat-card">
+                <p>24h trading volume</p>
+                
+<h2 id="total-trading-volume">$86.2B</h2>
+
+                <span class="positive">+5.18%</span>
+            </article>
+            <article class="stat-card">
+                <p>Bitcoin dominance</p>
+                
+<h2 id="bitcoin-dominance">56.8%</h2>
+
+                <span class="positive">+0.42%</span>
+            </article>
+            <article class="stat-card">
+                <p>Tracked assets</p>
+                <h2 id="asset-count">6</h2>
+                <span class="muted">Market watchlist</span>
+            </article>
+        </section>
+
+        <section class="market-panel" id="markets">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">LIVE-STYLE MARKET TABLE</p>
+                    <h2>Popular cryptocurrencies</h2>
+                </div>
+                <input id="coin-search" type="search" placeholder="Search coins..." aria-label="Search coins">
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Asset</th>
+                            <th>Price</th>
+                            <th>24h change</th>
+                            <th>Market cap</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="coin-list"></tbody>
+                </table>
+            </div>
+            <p class="table-note">Market prices are sourced from CoinGecko and may be delayed.</p>
+        </section>
+
+        <section class="bottom-grid">
+            <article class="info-card" id="watchlist">
+                <p class="eyebrow">YOUR SELECTION</p>
+                <h2>Watchlist</h2>
+                <p class="muted">Use the star beside any coin to add or remove it from your watchlist.</p>
+                <div id="watchlist-items" class="watchlist-items">
+                    <p class="muted">Your watchlist is empty.</p>
+                </div>
+            </article>
+            <article class="info-card">
+                <p class="eyebrow">MARKET INSIGHT</p>
+                <h2>Stay informed</h2>
+                <p class="muted">Crypto prices can change quickly. Research each asset carefully before making financial decisions.</p>
+                <span class="insight-tag">Learn · Track · Research</span>
+            </article>
+        </section>
+
+        <footer>
+            <a href="#" class="brand footer-brand"><span class="brand-icon">S</span> Soft Exchange</a>
+            <p>Live cryptocurrency market data · Prices update automatically.</p>
+        </footer>
+    </main>
+</body>
+</html>
